@@ -1,0 +1,32 @@
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      show-components: always
+
+  info:
+    java:
+      enabled: true
+    os:
+      enabled: true
+    env:
+      enabled: true
+
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+# env를 위한 설정값
+info:
+  app:
+    name: hello-actuator
+    company: yh
+
+
+logging:
+  level:
+    # hello.controller: INFO
+    hello.controller: debug
